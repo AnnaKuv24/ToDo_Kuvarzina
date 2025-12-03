@@ -1,0 +1,8 @@
+ALTER TABLE tasks 
+DROP CONSTRAINT IF EXISTS tasks_priority_check;
+
+ALTER TABLE tasks 
+ALTER COLUMN priority DROP DEFAULT;
+
+ALTER TABLE tasks 
+DROP COLUMN priority;

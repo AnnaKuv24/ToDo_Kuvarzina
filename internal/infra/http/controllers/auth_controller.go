@@ -2,12 +2,13 @@ package controllers
 
 import (
 	"errors"
+	"log"
+	"net/http"
+
 	"github.com/BohdanBoriak/boilerplate-go-back/internal/app"
 	"github.com/BohdanBoriak/boilerplate-go-back/internal/domain"
 	"github.com/BohdanBoriak/boilerplate-go-back/internal/infra/http/requests"
 	"github.com/BohdanBoriak/boilerplate-go-back/internal/infra/http/resources"
-	"log"
-	"net/http"
 )
 
 type AuthController struct {
